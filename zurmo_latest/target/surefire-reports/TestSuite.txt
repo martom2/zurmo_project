@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 1, Errors: 0, Skipped: 1, Time elapsed: 601.847 s <<< FAILURE! - in TestSuite
+createOpportunity(projekt.automatyzacja.test.CreateOpportunityTC)  Time elapsed: 11.843 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+Element <select id="Opportunity_stage_value" name="Opportunity[stage][value]"> is not clickable at point (548.2250061035156,298) because another element <div class="ui-datepicker-title"> obscures it
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-EPR1DQN', ip: '192.168.43.250', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 39932, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a48f86b5-66fa-4c29-9dcc-c7cd553e98d6
+	at projekt.automatyzacja.test.CreateOpportunityTC.createOpportunity(CreateOpportunityTC.java:115)
+

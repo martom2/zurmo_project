@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+  <test thread-count="9" name="Test" preserve-order="true">
+    <classes>
+      <class name="projekt.automatyzacja.test.LoginTC"/>
+      <class name="projekt.automatyzacja.test.CreateContactTC"/>
+      <class name="projekt.automatyzacja.test.EditContactTC"/>
+      <class name="projekt.automatyzacja.test.CreateAccountTC"/>
+      <class name="projekt.automatyzacja.test.CreateCatalogItemTC"/>
+      <class name="projekt.automatyzacja.test.CreateLeadTC"/>
+      <class name="projekt.automatyzacja.test.DeleteLeadTC"/>
+      <class name="projekt.automatyzacja.test.CreateOpportunityTC"/>
+      <class name="projekt.automatyzacja.test.ExportOpportunitiesTC"/>
+      <class name="projekt.automatyzacja.test.DeactivateUserTC"/>
+      <class name="projekt.automatyzacja.test.ActivateUserTC"/>
+      <class name="projekt.automatyzacja.test.AddPostTC"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

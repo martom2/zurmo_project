@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="24" passed="22">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="600356" started-at="2019-07-16T10:28:47Z" finished-at="2019-07-16T10:38:48Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="600356" started-at="2019-07-16T10:28:47Z" finished-at="2019-07-16T10:38:48Z">
+      <class name="projekt.automatyzacja.test.EditContactTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.EditContactTC@34ce68b4]" name="setUp" is-config="true" duration-ms="31647" started-at="2019-07-16T10:30:39Z" finished-at="2019-07-16T10:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="editContact()[pri:0, instance:projekt.automatyzacja.test.EditContactTC@34ce68b4]" name="editContact" duration-ms="28931" started-at="2019-07-16T10:31:11Z" finished-at="2019-07-16T10:31:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContact -->
+        <test-method status="PASS" signature="verifyEditedContact()[pri:1, instance:projekt.automatyzacja.test.EditContactTC@34ce68b4]" name="verifyEditedContact" duration-ms="306" started-at="2019-07-16T10:38:24Z" depends-on-methods="projekt.automatyzacja.test.EditContactTC.editContact" finished-at="2019-07-16T10:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditedContact -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.EditContactTC@34ce68b4]" name="afterClass" is-config="true" duration-ms="2657" started-at="2019-07-16T10:38:24Z" finished-at="2019-07-16T10:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.EditContactTC -->
+      <class name="projekt.automatyzacja.test.CreateOpportunityTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ae7fff6]" name="setUp" is-config="true" duration-ms="29719" started-at="2019-07-16T10:35:18Z" finished-at="2019-07-16T10:35:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="createOpportunity()[pri:0, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ae7fff6]" name="createOpportunity" duration-ms="11828" started-at="2019-07-16T10:35:48Z" finished-at="2019-07-16T10:36:00Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <select id="Opportunity_stage_value" name="Opportunity[stage][value]"> is not clickable at point (548.2250061035156,298) because another element <div class="ui-datepicker-title"> obscures it
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-EPR1DQN', ip: '192.168.43.250', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 39932, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a48f86b5-66fa-4c29-9dcc-c7cd553e98d6]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <select id="Opportunity_stage_value" name="Opportunity[stage][value]"> is not clickable at point (548.2250061035156,298) because another element <div class="ui-datepicker-title"> obscures it
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-EPR1DQN', ip: '192.168.43.250', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 59.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 39932, moz:profile: C:\Windows\Temp\rust_mozpro..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: a48f86b5-66fa-4c29-9dcc-c7cd553e98d6
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at org.openqa.selenium.support.ui.Select.setSelected(Select.java:324)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:120)
+at projekt.automatyzacja.page.CreateOpportunityPage.selectStage(CreateOpportunityPage.java:113)
+at projekt.automatyzacja.test.CreateOpportunityTC.createOpportunity(CreateOpportunityTC.java:115)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:87)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1132)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:978)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:176)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
+at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
+at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+at hudson.remoting.Request$2.run(Request.java:369)
+at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOpportunity -->
+        <test-method status="SKIP" signature="verifyCreatedOpportunity()[pri:1, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ae7fff6]" name="verifyCreatedOpportunity" duration-ms="0" started-at="2019-07-16T10:38:38Z" depends-on-methods="projekt.automatyzacja.test.CreateOpportunityTC.createOpportunity" finished-at="2019-07-16T10:38:38Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method CreateOpportunityTC.verifyCreatedOpportunity()[pri:1, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ae7fff6] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method CreateOpportunityTC.verifyCreatedOpportunity()[pri:1, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ae7fff6] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:87)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1132)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:978)
+at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:854)
+at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
+at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+at org.jvnet.hudson.maven3.launcher.Maven35Launcher.main(Maven35Launcher.java:130)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+at jenkins.maven3.agent.Maven35Main.launch(Maven35Main.java:176)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at hudson.maven.Maven3Builder.call(Maven3Builder.java:139)
+at hudson.maven.Maven3Builder.call(Maven3Builder.java:70)
+at hudson.remoting.UserRequest.perform(UserRequest.java:212)
+at hudson.remoting.UserRequest.perform(UserRequest.java:54)
+at hudson.remoting.Request$2.run(Request.java:369)
+at hudson.remoting.InterceptingExecutorService$1.call(InterceptingExecutorService.java:72)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+at java.lang.Thread.run(Thread.java:745)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedOpportunity -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ae7fff6]" name="afterSuite" is-config="true" duration-ms="2501" started-at="2019-07-16T10:38:38Z" finished-at="2019-07-16T10:38:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateOpportunityTC -->
+      <class name="projekt.automatyzacja.test.CreateLeadTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateLeadTC@a3352c6]" name="setUp" is-config="true" duration-ms="28094" started-at="2019-07-16T10:33:39Z" finished-at="2019-07-16T10:34:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createLead()[pri:0, instance:projekt.automatyzacja.test.CreateLeadTC@a3352c6]" name="createLead" duration-ms="14034" started-at="2019-07-16T10:34:08Z" finished-at="2019-07-16T10:34:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method status="PASS" signature="verifyCreatedLead()[pri:1, instance:projekt.automatyzacja.test.CreateLeadTC@a3352c6]" name="verifyCreatedLead" duration-ms="386" started-at="2019-07-16T10:38:33Z" depends-on-methods="projekt.automatyzacja.test.CreateLeadTC.createLead" finished-at="2019-07-16T10:38:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedLead -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateLeadTC@a3352c6]" name="afterSuite" is-config="true" duration-ms="2278" started-at="2019-07-16T10:38:33Z" finished-at="2019-07-16T10:38:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateLeadTC -->
+      <class name="projekt.automatyzacja.test.ActivateUserTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.ActivateUserTC@1f1526b3]" name="setUp" is-config="true" duration-ms="27791" started-at="2019-07-16T10:37:13Z" finished-at="2019-07-16T10:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="activateUser()[pri:0, instance:projekt.automatyzacja.test.ActivateUserTC@1f1526b3]" name="activateUser" duration-ms="1" started-at="2019-07-16T10:37:40Z" finished-at="2019-07-16T10:37:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activateUser -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:projekt.automatyzacja.test.ActivateUserTC@1f1526b3]" name="quitBrowser" is-config="true" duration-ms="1795" started-at="2019-07-16T10:38:44Z" finished-at="2019-07-16T10:38:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+        <test-method status="PASS" signature="verifyInactivationOfUser()[pri:1, instance:projekt.automatyzacja.test.ActivateUserTC@1f1526b3]" name="verifyInactivationOfUser" duration-ms="0" started-at="2019-07-16T10:38:44Z" depends-on-methods="projekt.automatyzacja.test.ActivateUserTC.activateUser" finished-at="2019-07-16T10:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInactivationOfUser -->
+      </class> <!-- projekt.automatyzacja.test.ActivateUserTC -->
+      <class name="projekt.automatyzacja.test.DeactivateUserTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.DeactivateUserTC@2ad8abf4]" name="setUp" is-config="true" duration-ms="31107" started-at="2019-07-16T10:36:42Z" finished-at="2019-07-16T10:37:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deactivateUser()[pri:0, instance:projekt.automatyzacja.test.DeactivateUserTC@2ad8abf4]" name="deactivateUser" duration-ms="0" started-at="2019-07-16T10:37:13Z" finished-at="2019-07-16T10:37:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactivateUser -->
+        <test-method status="PASS" signature="verifyDeactivationOfUser()[pri:1, instance:projekt.automatyzacja.test.DeactivateUserTC@2ad8abf4]" name="verifyDeactivationOfUser" duration-ms="0" started-at="2019-07-16T10:38:40Z" depends-on-methods="projekt.automatyzacja.test.DeactivateUserTC.deactivateUser" finished-at="2019-07-16T10:38:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeactivationOfUser -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.DeactivateUserTC@2ad8abf4]" name="afterSuite" is-config="true" duration-ms="3895" started-at="2019-07-16T10:38:40Z" finished-at="2019-07-16T10:38:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.DeactivateUserTC -->
+      <class name="projekt.automatyzacja.test.CreateContactTC5">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@6675e97d]" name="setUp" is-config="true" duration-ms="28033" started-at="2019-07-16T10:29:09Z" finished-at="2019-07-16T10:29:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createContact()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@2c4a16f0]" name="createContact" duration-ms="14773" started-at="2019-07-16T10:29:37Z" finished-at="2019-07-16T10:29:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@6675e97d]" name="setUp" is-config="true" duration-ms="32804" started-at="2019-07-16T10:29:52Z" finished-at="2019-07-16T10:30:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createContact()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@6675e97d]" name="createContact" duration-ms="14500" started-at="2019-07-16T10:30:25Z" finished-at="2019-07-16T10:30:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method status="PASS" signature="verifyCreatedContact()[pri:1, instance:projekt.automatyzacja.test.CreateContactTC5@6675e97d]" name="verifyCreatedContact" duration-ms="346" started-at="2019-07-16T10:38:19Z" depends-on-methods="projekt.automatyzacja.test.CreateContactTC5.createContact" finished-at="2019-07-16T10:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedContact -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@6675e97d]" name="afterSuite" is-config="true" duration-ms="2138" started-at="2019-07-16T10:38:20Z" finished-at="2019-07-16T10:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="verifyCreatedContact()[pri:1, instance:projekt.automatyzacja.test.CreateContactTC5@2c4a16f0]" name="verifyCreatedContact" duration-ms="285" started-at="2019-07-16T10:38:22Z" depends-on-methods="projekt.automatyzacja.test.CreateContactTC5.createContact" finished-at="2019-07-16T10:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedContact -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@6675e97d]" name="afterSuite" is-config="true" duration-ms="1751" started-at="2019-07-16T10:38:22Z" finished-at="2019-07-16T10:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateContactTC5 -->
+      <class name="projekt.automatyzacja.test.CreateCatalogItemTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateCatalogItemTC@43c465c2]" name="setUp" is-config="true" duration-ms="31038" started-at="2019-07-16T10:32:20Z" finished-at="2019-07-16T10:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createCatalogItem()[pri:0, instance:projekt.automatyzacja.test.CreateCatalogItemTC@43c465c2]" name="createCatalogItem" duration-ms="48069" started-at="2019-07-16T10:32:51Z" finished-at="2019-07-16T10:33:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCatalogItem -->
+        <test-method status="PASS" signature="verifyCreatedCatalogItem()[pri:1, instance:projekt.automatyzacja.test.CreateCatalogItemTC@43c465c2]" name="verifyCreatedCatalogItem" duration-ms="185" started-at="2019-07-16T10:38:30Z" depends-on-methods="projekt.automatyzacja.test.CreateCatalogItemTC.createCatalogItem" finished-at="2019-07-16T10:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedCatalogItem -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.CreateCatalogItemTC@43c465c2]" name="afterClass" is-config="true" duration-ms="3164" started-at="2019-07-16T10:38:30Z" finished-at="2019-07-16T10:38:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.CreateCatalogItemTC -->
+      <class name="projekt.automatyzacja.test.AddPostTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.AddPostTC@7ae872e8]" name="setUp" is-config="true" duration-ms="33243" started-at="2019-07-16T10:37:40Z" finished-at="2019-07-16T10:38:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addPost()[pri:0, instance:projekt.automatyzacja.test.AddPostTC@7ae872e8]" name="addPost" duration-ms="5530" started-at="2019-07-16T10:38:14Z" finished-at="2019-07-16T10:38:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPost -->
+        <test-method status="PASS" signature="verifyAddedPost()[pri:1, instance:projekt.automatyzacja.test.AddPostTC@7ae872e8]" name="verifyAddedPost" duration-ms="29" started-at="2019-07-16T10:38:46Z" depends-on-methods="projekt.automatyzacja.test.AddPostTC.addPost" finished-at="2019-07-16T10:38:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddedPost -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.AddPostTC@7ae872e8]" name="afterClass" is-config="true" duration-ms="1594" started-at="2019-07-16T10:38:46Z" finished-at="2019-07-16T10:38:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.AddPostTC -->
+      <class name="projekt.automatyzacja.test.DeleteLeadTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.DeleteLeadTC@4d7f00fc]" name="setUp" is-config="true" duration-ms="35396" started-at="2019-07-16T10:34:22Z" finished-at="2019-07-16T10:34:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteLead()[pri:0, instance:projekt.automatyzacja.test.DeleteLeadTC@4d7f00fc]" name="deleteLead" duration-ms="21202" started-at="2019-07-16T10:34:57Z" finished-at="2019-07-16T10:35:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLead -->
+        <test-method status="PASS" signature="verifyDeletion()[pri:1, instance:projekt.automatyzacja.test.DeleteLeadTC@4d7f00fc]" name="verifyDeletion" duration-ms="39" started-at="2019-07-16T10:38:36Z" depends-on-methods="projekt.automatyzacja.test.DeleteLeadTC.deleteLead" finished-at="2019-07-16T10:38:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletion -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.DeleteLeadTC@4d7f00fc]" name="afterClass" is-config="true" duration-ms="1929" started-at="2019-07-16T10:38:36Z" finished-at="2019-07-16T10:38:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.DeleteLeadTC -->
+      <class name="projekt.automatyzacja.test.LoginTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.LoginTC@732c5e43]" name="setUp" is-config="true" duration-ms="20182" started-at="2019-07-16T10:28:47Z" finished-at="2019-07-16T10:29:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginToZurmo()[pri:0, instance:projekt.automatyzacja.test.LoginTC@732c5e43]" name="loginToZurmo" duration-ms="0" started-at="2019-07-16T10:29:07Z" finished-at="2019-07-16T10:29:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToZurmo -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:projekt.automatyzacja.test.LoginTC@732c5e43]" name="quitBrowser" is-config="true" duration-ms="1782" started-at="2019-07-16T10:29:07Z" finished-at="2019-07-16T10:29:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- projekt.automatyzacja.test.LoginTC -->
+      <class name="projekt.automatyzacja.test.CreateAccountTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateAccountTC@3fc5195c]" name="setUp" is-config="true" duration-ms="29235" started-at="2019-07-16T10:31:40Z" finished-at="2019-07-16T10:32:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:projekt.automatyzacja.test.CreateAccountTC@3fc5195c]" name="createAccount" duration-ms="11258" started-at="2019-07-16T10:32:09Z" finished-at="2019-07-16T10:32:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method status="PASS" signature="verifyCreatedAccount()[pri:1, instance:projekt.automatyzacja.test.CreateAccountTC@3fc5195c]" name="verifyCreatedAccount" duration-ms="350" started-at="2019-07-16T10:38:27Z" depends-on-methods="projekt.automatyzacja.test.CreateAccountTC.createAccount" finished-at="2019-07-16T10:38:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedAccount -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateAccountTC@3fc5195c]" name="afterSuite" is-config="true" duration-ms="2699" started-at="2019-07-16T10:38:27Z" finished-at="2019-07-16T10:38:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateAccountTC -->
+      <class name="projekt.automatyzacja.test.ExportOpportunitiesTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.ExportOpportunitiesTC@3a6d7b1d]" name="setUp" is-config="true" duration-ms="33691" started-at="2019-07-16T10:36:00Z" finished-at="2019-07-16T10:36:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="exportOpportunity()[pri:0, instance:projekt.automatyzacja.test.ExportOpportunitiesTC@3a6d7b1d]" name="exportOpportunity" duration-ms="5344" started-at="2019-07-16T10:36:33Z" finished-at="2019-07-16T10:36:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exportOpportunity -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.ExportOpportunitiesTC@3a6d7b1d]" name="afterClass" is-config="true" duration-ms="2764" started-at="2019-07-16T10:36:39Z" finished-at="2019-07-16T10:36:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.ExportOpportunitiesTC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

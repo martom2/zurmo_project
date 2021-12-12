@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="24" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="650815" started-at="2019-07-15T17:07:15Z" finished-at="2019-07-15T17:18:06Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="650815" started-at="2019-07-15T17:07:15Z" finished-at="2019-07-15T17:18:06Z">
+      <class name="projekt.automatyzacja.test.EditContactTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.EditContactTC@cad498c]" name="setUp" is-config="true" duration-ms="36091" started-at="2019-07-15T17:09:14Z" finished-at="2019-07-15T17:09:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="editContact()[pri:0, instance:projekt.automatyzacja.test.EditContactTC@cad498c]" name="editContact" duration-ms="31436" started-at="2019-07-15T17:09:50Z" finished-at="2019-07-15T17:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editContact -->
+        <test-method status="PASS" signature="verifyEditedContact()[pri:1, instance:projekt.automatyzacja.test.EditContactTC@cad498c]" name="verifyEditedContact" duration-ms="318" started-at="2019-07-15T17:17:36Z" depends-on-methods="projekt.automatyzacja.test.EditContactTC.editContact" finished-at="2019-07-15T17:17:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyEditedContact -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.EditContactTC@cad498c]" name="afterClass" is-config="true" duration-ms="2969" started-at="2019-07-15T17:17:36Z" finished-at="2019-07-15T17:17:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.EditContactTC -->
+      <class name="projekt.automatyzacja.test.CreateLeadTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateLeadTC@b62d79]" name="setUp" is-config="true" duration-ms="30136" started-at="2019-07-15T17:12:32Z" finished-at="2019-07-15T17:13:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createLead()[pri:0, instance:projekt.automatyzacja.test.CreateLeadTC@b62d79]" name="createLead" duration-ms="16152" started-at="2019-07-15T17:13:02Z" finished-at="2019-07-15T17:13:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLead -->
+        <test-method status="PASS" signature="verifyCreatedLead()[pri:1, instance:projekt.automatyzacja.test.CreateLeadTC@b62d79]" name="verifyCreatedLead" duration-ms="328" started-at="2019-07-15T17:17:47Z" depends-on-methods="projekt.automatyzacja.test.CreateLeadTC.createLead" finished-at="2019-07-15T17:17:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedLead -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateLeadTC@b62d79]" name="afterSuite" is-config="true" duration-ms="3272" started-at="2019-07-15T17:17:47Z" finished-at="2019-07-15T17:17:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateLeadTC -->
+      <class name="projekt.automatyzacja.test.CreateOpportunityTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ace1ed4]" name="setUp" is-config="true" duration-ms="31009" started-at="2019-07-15T17:14:16Z" finished-at="2019-07-15T17:14:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createOpportunity()[pri:0, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ace1ed4]" name="createOpportunity" duration-ms="18327" started-at="2019-07-15T17:14:47Z" finished-at="2019-07-15T17:15:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOpportunity -->
+        <test-method status="FAIL" signature="verifyCreatedOpportunity()[pri:1, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ace1ed4]" name="verifyCreatedOpportunity" duration-ms="63" started-at="2019-07-15T17:17:53Z" depends-on-methods="projekt.automatyzacja.test.CreateOpportunityTC.createOpportunity" finished-at="2019-07-15T17:17:53Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [12/3/18] but found [7/15/19]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [12/3/18] but found [7/15/19]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at projekt.automatyzacja.test.CreateOpportunityTC.verifyCreatedOpportunity(CreateOpportunityTC.java:131)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedOpportunity -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateOpportunityTC@5ace1ed4]" name="afterSuite" is-config="true" duration-ms="2537" started-at="2019-07-15T17:17:53Z" finished-at="2019-07-15T17:17:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateOpportunityTC -->
+      <class name="projekt.automatyzacja.test.ActivateUserTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.ActivateUserTC@4e096385]" name="setUp" is-config="true" duration-ms="30846" started-at="2019-07-15T17:16:14Z" finished-at="2019-07-15T17:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="activateUser()[pri:0, instance:projekt.automatyzacja.test.ActivateUserTC@4e096385]" name="activateUser" duration-ms="6" started-at="2019-07-15T17:16:45Z" finished-at="2019-07-15T17:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- activateUser -->
+        <test-method status="PASS" signature="verifyInactivationOfUser()[pri:1, instance:projekt.automatyzacja.test.ActivateUserTC@4e096385]" name="verifyInactivationOfUser" duration-ms="0" started-at="2019-07-15T17:18:01Z" depends-on-methods="projekt.automatyzacja.test.ActivateUserTC.activateUser" finished-at="2019-07-15T17:18:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInactivationOfUser -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:projekt.automatyzacja.test.ActivateUserTC@4e096385]" name="quitBrowser" is-config="true" duration-ms="2418" started-at="2019-07-15T17:18:01Z" finished-at="2019-07-15T17:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- projekt.automatyzacja.test.ActivateUserTC -->
+      <class name="projekt.automatyzacja.test.DeactivateUserTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.DeactivateUserTC@27ff5d15]" name="setUp" is-config="true" duration-ms="30872" started-at="2019-07-15T17:15:43Z" finished-at="2019-07-15T17:16:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deactivateUser()[pri:0, instance:projekt.automatyzacja.test.DeactivateUserTC@27ff5d15]" name="deactivateUser" duration-ms="1" started-at="2019-07-15T17:16:14Z" finished-at="2019-07-15T17:16:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactivateUser -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.DeactivateUserTC@27ff5d15]" name="afterSuite" is-config="true" duration-ms="5780" started-at="2019-07-15T17:17:56Z" finished-at="2019-07-15T17:18:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="verifyDeactivationOfUser()[pri:1, instance:projekt.automatyzacja.test.DeactivateUserTC@27ff5d15]" name="verifyDeactivationOfUser" duration-ms="0" started-at="2019-07-15T17:17:56Z" depends-on-methods="projekt.automatyzacja.test.DeactivateUserTC.deactivateUser" finished-at="2019-07-15T17:17:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeactivationOfUser -->
+      </class> <!-- projekt.automatyzacja.test.DeactivateUserTC -->
+      <class name="projekt.automatyzacja.test.CreateContactTC5">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@66498326]" name="setUp" is-config="true" duration-ms="31990" started-at="2019-07-15T17:07:35Z" finished-at="2019-07-15T17:08:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createContact()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@51dcb805]" name="createContact" duration-ms="17025" started-at="2019-07-15T17:08:07Z" finished-at="2019-07-15T17:08:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@66498326]" name="setUp" is-config="true" duration-ms="33778" started-at="2019-07-15T17:08:24Z" finished-at="2019-07-15T17:08:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createContact()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@66498326]" name="createContact" duration-ms="15971" started-at="2019-07-15T17:08:58Z" finished-at="2019-07-15T17:09:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+        <test-method status="PASS" signature="verifyCreatedContact()[pri:1, instance:projekt.automatyzacja.test.CreateContactTC5@66498326]" name="verifyCreatedContact" duration-ms="344" started-at="2019-07-15T17:17:31Z" depends-on-methods="projekt.automatyzacja.test.CreateContactTC5.createContact" finished-at="2019-07-15T17:17:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedContact -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@66498326]" name="afterSuite" is-config="true" duration-ms="2332" started-at="2019-07-15T17:17:31Z" finished-at="2019-07-15T17:17:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method status="PASS" signature="verifyCreatedContact()[pri:1, instance:projekt.automatyzacja.test.CreateContactTC5@51dcb805]" name="verifyCreatedContact" duration-ms="344" started-at="2019-07-15T17:17:33Z" depends-on-methods="projekt.automatyzacja.test.CreateContactTC5.createContact" finished-at="2019-07-15T17:17:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedContact -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateContactTC5@66498326]" name="afterSuite" is-config="true" duration-ms="2006" started-at="2019-07-15T17:17:34Z" finished-at="2019-07-15T17:17:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateContactTC5 -->
+      <class name="projekt.automatyzacja.test.CreateCatalogItemTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateCatalogItemTC@2accdbb5]" name="setUp" is-config="true" duration-ms="36050" started-at="2019-07-15T17:11:06Z" finished-at="2019-07-15T17:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createCatalogItem()[pri:0, instance:projekt.automatyzacja.test.CreateCatalogItemTC@2accdbb5]" name="createCatalogItem" duration-ms="49830" started-at="2019-07-15T17:11:42Z" finished-at="2019-07-15T17:12:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCatalogItem -->
+        <test-method status="PASS" signature="verifyCreatedCatalogItem()[pri:1, instance:projekt.automatyzacja.test.CreateCatalogItemTC@2accdbb5]" name="verifyCreatedCatalogItem" duration-ms="156" started-at="2019-07-15T17:17:43Z" depends-on-methods="projekt.automatyzacja.test.CreateCatalogItemTC.createCatalogItem" finished-at="2019-07-15T17:17:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedCatalogItem -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.CreateCatalogItemTC@2accdbb5]" name="afterClass" is-config="true" duration-ms="3985" started-at="2019-07-15T17:17:43Z" finished-at="2019-07-15T17:17:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.CreateCatalogItemTC -->
+      <class name="projekt.automatyzacja.test.DeleteLeadTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.DeleteLeadTC@6631f5ca]" name="setUp" is-config="true" duration-ms="35432" started-at="2019-07-15T17:13:18Z" finished-at="2019-07-15T17:13:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteLead()[pri:0, instance:projekt.automatyzacja.test.DeleteLeadTC@6631f5ca]" name="deleteLead" duration-ms="22087" started-at="2019-07-15T17:13:54Z" finished-at="2019-07-15T17:14:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLead -->
+        <test-method status="PASS" signature="verifyDeletion()[pri:1, instance:projekt.automatyzacja.test.DeleteLeadTC@6631f5ca]" name="verifyDeletion" duration-ms="15" started-at="2019-07-15T17:17:50Z" depends-on-methods="projekt.automatyzacja.test.DeleteLeadTC.deleteLead" finished-at="2019-07-15T17:17:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeletion -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.DeleteLeadTC@6631f5ca]" name="afterClass" is-config="true" duration-ms="2723" started-at="2019-07-15T17:17:50Z" finished-at="2019-07-15T17:17:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.DeleteLeadTC -->
+      <class name="projekt.automatyzacja.test.AddPostTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.AddPostTC@649bec2e]" name="setUp" is-config="true" duration-ms="39215" started-at="2019-07-15T17:16:45Z" finished-at="2019-07-15T17:17:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="addPost()[pri:0, instance:projekt.automatyzacja.test.AddPostTC@649bec2e]" name="addPost" duration-ms="6639" started-at="2019-07-15T17:17:24Z" finished-at="2019-07-15T17:17:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPost -->
+        <test-method status="PASS" signature="verifyAddedPost()[pri:1, instance:projekt.automatyzacja.test.AddPostTC@649bec2e]" name="verifyAddedPost" duration-ms="25" started-at="2019-07-15T17:18:04Z" depends-on-methods="projekt.automatyzacja.test.AddPostTC.addPost" finished-at="2019-07-15T17:18:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddedPost -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.AddPostTC@649bec2e]" name="afterClass" is-config="true" duration-ms="1926" started-at="2019-07-15T17:18:04Z" finished-at="2019-07-15T17:18:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.AddPostTC -->
+      <class name="projekt.automatyzacja.test.CreateAccountTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.CreateAccountTC@1e6454ec]" name="setUp" is-config="true" duration-ms="31614" started-at="2019-07-15T17:10:21Z" finished-at="2019-07-15T17:10:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createAccount()[pri:0, instance:projekt.automatyzacja.test.CreateAccountTC@1e6454ec]" name="createAccount" duration-ms="13203" started-at="2019-07-15T17:10:53Z" finished-at="2019-07-15T17:11:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method status="PASS" signature="verifyCreatedAccount()[pri:1, instance:projekt.automatyzacja.test.CreateAccountTC@1e6454ec]" name="verifyCreatedAccount" duration-ms="250" started-at="2019-07-15T17:17:39Z" depends-on-methods="projekt.automatyzacja.test.CreateAccountTC.createAccount" finished-at="2019-07-15T17:17:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreatedAccount -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:projekt.automatyzacja.test.CreateAccountTC@1e6454ec]" name="afterSuite" is-config="true" duration-ms="3262" started-at="2019-07-15T17:17:39Z" finished-at="2019-07-15T17:17:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- projekt.automatyzacja.test.CreateAccountTC -->
+      <class name="projekt.automatyzacja.test.LoginTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.LoginTC@c333c60]" name="setUp" is-config="true" duration-ms="17510" started-at="2019-07-15T17:07:15Z" finished-at="2019-07-15T17:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginToZurmo()[pri:0, instance:projekt.automatyzacja.test.LoginTC@c333c60]" name="loginToZurmo" duration-ms="0" started-at="2019-07-15T17:07:33Z" finished-at="2019-07-15T17:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToZurmo -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:projekt.automatyzacja.test.LoginTC@c333c60]" name="quitBrowser" is-config="true" duration-ms="2352" started-at="2019-07-15T17:07:33Z" finished-at="2019-07-15T17:07:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- projekt.automatyzacja.test.LoginTC -->
+      <class name="projekt.automatyzacja.test.ExportOpportunitiesTC">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:projekt.automatyzacja.test.ExportOpportunitiesTC@1613674b]" name="setUp" is-config="true" duration-ms="31011" started-at="2019-07-15T17:15:05Z" finished-at="2019-07-15T17:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="exportOpportunity()[pri:0, instance:projekt.automatyzacja.test.ExportOpportunitiesTC@1613674b]" name="exportOpportunity" duration-ms="4845" started-at="2019-07-15T17:15:36Z" finished-at="2019-07-15T17:15:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exportOpportunity -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:projekt.automatyzacja.test.ExportOpportunitiesTC@1613674b]" name="afterClass" is-config="true" duration-ms="2279" started-at="2019-07-15T17:15:41Z" finished-at="2019-07-15T17:15:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- projekt.automatyzacja.test.ExportOpportunitiesTC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
